@@ -8,7 +8,7 @@ from flask import Blueprint
 class CrcLayoutPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
     # plugins.implements(plugins.ITemplateHelpers)
-    # plugins.implements(plugins.IBlueprint)
+    plugins.implements(plugins.IBlueprint)
 
     # IConfigurer
 
@@ -20,18 +20,18 @@ class CrcLayoutPlugin(plugins.SingletonPlugin):
 
     #plugin Blueprint
 
-    # def get_blueprint(self):
+    def get_blueprint(self):
 
-    #     blueprint = Blueprint(self.name, self.__module__)
-    #     blueprint.template_folder = u'templates'
-    #     blueprint.add_url_rule(
-    #         u'/crc_layout/get_json/<dataset_name>',
-    #         u'get_json',
-    #         Helper.get_json,
-    #         methods=['GET']
-    #         )
+        blueprint = Blueprint(self.name, self.__module__)
+        blueprint.template_folder = u'templates'
+        blueprint.add_url_rule(
+            u'/crc_layout/get_json/<dataset_name>',
+            u'get_json',
+            Helper.get_json,
+            methods=['GET']
+            )
 
-    #     return blueprint
+        return blueprint
         
     
 
