@@ -1,0 +1,56 @@
+sfb1368-css:
+  output: ckanext-crc1368/%(version)s_my.css
+  contents:
+    - ckan_style.css
+
+
+sfb1368-js:  
+  output: ckanext-crc1368/%(version)s_my.js
+  extra:
+    preload:
+      - base/main
+      - vendor/vendor
+      - vendor/bootstrap
+      - vendor/jquery
+      - vendor/jquery.ui.core
+  contents:
+    - ckan_1368.js
+
+
+search-css:
+  output: ckanext-crc1368/%(version)s_my.css
+  contents:
+    - search.css
+
+
+stages-css:
+  output: ckanext-crc1368/%(version)s_my.css
+  contents:
+    - stages.css
+
+
+stages-js:  
+  output: ckanext-crc1368/%(version)s_my.js
+  extra:
+    preload:
+      - base/main
+      - vendor/vendor
+      - vendor/bootstrap
+      - vendor/jquery
+      - vendor/jquery.ui.core
+  contents:
+    - stages.js
+
+
+search-js:  
+  output: ckanext-crc1368/%(version)s_my.js
+  extra:
+    preload:
+      - base/main
+      - vendor/vendor
+      - vendor/bootstrap
+      - vendor/jquery
+      - vendor/jquery.ui.core
+      - vendor/select2
+  contents:
+    - search.js

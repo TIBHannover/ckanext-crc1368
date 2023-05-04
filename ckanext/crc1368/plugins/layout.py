@@ -7,7 +7,7 @@ from flask import Blueprint
 
 class CrcLayoutPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
-    # plugins.implements(plugins.ITemplateHelpers)
+    plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.IBlueprint)
 
     # IConfigurer
