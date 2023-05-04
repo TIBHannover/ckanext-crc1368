@@ -1,7 +1,7 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 from flask import Blueprint
-from ckanext.crc1153.controllers.systemStatsController import BaseController
+from ckanext.crc1368.controllers.systemStatsController import BaseController
 
 
 class SystemStatsPlugin(plugins.SingletonPlugin):
@@ -11,10 +11,8 @@ class SystemStatsPlugin(plugins.SingletonPlugin):
     # IConfigurer
 
     def update_config(self, config_):
-        toolkit.add_template_directory(config_, 'templates')
-        toolkit.add_public_directory(config_, 'public')
-        toolkit.add_resource('public/statics', 'ckanext-system-stats')
-
+        toolkit.add_template_directory(config_, '../templates')        
+        
 
     def get_blueprint(self):
 
