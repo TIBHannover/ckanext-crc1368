@@ -1,6 +1,6 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
-# from ckanext.crc1153.libs.crc_layout.helpers import Helper
+from ckanext.crc1368.libs.crc_layout.helpers import Helper
 # from ckanext.crc1153.libs.commons import Commons
 from flask import Blueprint
 
@@ -35,15 +35,14 @@ class CrcLayoutPlugin(plugins.SingletonPlugin):
         
     
 
-    # def get_helpers(self):
-    #     return {'is_plugin_enabled': Commons.check_plugin_enabled,
-    #         'stages_count': Helper.stages_count, 
-    #         'set_active_stage': Helper.set_active_stage,
-    #         'set_stage_orders': Helper.set_stage_orders,
-    #         'set_stage_titles': Helper.set_stage_titles,
-    #         'query_prepration': Helper.search_query_prepration,
-    #         'search_type_selection_is_needed': Helper.search_type_selection_is_needed,
-    #         'get_dataset_export_url': Helper.get_dataset_export_url,
-    #         'get_material_list_from_smw': CrcSpecificMetadataHelpers.get_material_list,
-    #         'get_demonstrator_list_from_smw': CrcSpecificMetadataHelpers.get_demonstrator_list
-    #     }
+    def get_helpers(self):
+        return {'which_sfb': Helper.which_sfb, 
+            'is_enabled': Helper.check_plugin_enabled,
+            'stages_count': Helper.stages_count, 
+            'set_stages': Helper.set_stages,
+            'set_orders': Helper.set_orders,
+            'set_titles': Helper.set_titles,
+            'query_prepration': Helper.search_query_prepration,
+            'is_selection_needed': Helper.is_selection_needed,
+            'get_export_url': Helper.get_export_url
+        }
