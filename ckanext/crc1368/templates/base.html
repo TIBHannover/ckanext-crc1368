@@ -2,19 +2,11 @@
 
 {% block styles %}
   {{ super() }}
-  {% if h.which_sfb() == '1368' %}
-      {% asset 'ckanext-sfb-layout/sfb1368-css' %}
-  {% else: %}  
-      {% asset 'ckanext-sfb-layout/sfb1153-css' %}
-  {% endif %}
+  {% asset 'ckanext-crc1368-layout/sfb1368-css' %}
 {% endblock %}
 
 
 {%- block scripts %}
   {{ super() }}
-  {% if h.which_sfb() == '1368' %}
-      {% asset 'ckanext-sfb-layout/sfb1368-js' %}
-  {% else: %}  
-      {% asset 'ckanext-sfb-layout/sfb1153-js' %}
-  {% endif %}
+  {% asset 'ckanext-sfb-layout/sfb1368-js' %}
 {% endblock -%}
