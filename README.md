@@ -16,6 +16,8 @@ Compatibility with core CKAN versions:
 ## Plugins
 - **crc1368_layout**: The CKAN layout customization plugin. 
 
+- **crc1368_system_stats**: The system stats (data resources count, formats, etc) for system admins.
+
 
 ## Hint: 
 TBA
