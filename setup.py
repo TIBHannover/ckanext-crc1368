@@ -85,6 +85,7 @@ setup(
     entry_points='''
         [ckan.plugins]
         crc1368_layout=ckanext.crc1368.plugins.layout:CrcLayoutPlugin
+        crc1369_system_stats=ckanext.crc1368.plugins.system_stats:SystemStatsPlugin
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
