@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 from flask import render_template
-from ckanext.crc1153.libs.commons import Commons
+from ckanext.crc1368.libs.commons import Commons
 from ckanext.crc1153.libs.auth_helpers import AuthHelpers
 from sqlalchemy.sql.expression import false
 from ckan.model import Package, Group, User
