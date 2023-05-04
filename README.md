@@ -14,7 +14,7 @@ Compatibility with core CKAN versions:
 
 
 ## Plugins
-TBA
+- **crc1368_layout**: The CKAN layout customization plugin. 
 
 
 ## Hint: 
